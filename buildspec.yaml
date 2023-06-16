@@ -6,8 +6,8 @@ phases:
       php: 8.2
   build:
     commands:
-      - echo "Build phase"
-      - composer install --no-dev
+       - echo Build started on `date`
+      - zip hello.zip ./index.html
   post_build:
     commands:
       - echo "Post build phase"
